@@ -2,29 +2,32 @@
   "scopes": [
     {
       "name": "$XSAPPNAME.RiskViewer",
-      "description": "Risk Viewer Scope"
+      "description": "RiskViewer"
     },
     {
       "name": "$XSAPPNAME.RiskManager",
-      "description": "Risk Manager Scope"
+      "description": "RiskManager"
     }
   ],
   "attributes": [],
   "role-templates": [
     {
       "name": "RiskViewer",
-      "description": "Can view Risks and Mitigations",
+      "description": "generated",
       "scope-references": [
         "$XSAPPNAME.RiskViewer"
-      ]
+      ],
+      "attribute-references": []
     },
     {
       "name": "RiskManager",
-      "description": "Can manage Risks and Mitigations",
+      "description": "generated",
       "scope-references": [
         "$XSAPPNAME.RiskManager"
-      ]
+      ],
+      "attribute-references": []
     }
   ],
-  "authorities-inheritance": false
+  "xsappname": "RiskManagement",
+  "tenant-mode": "dedicated"
 }
